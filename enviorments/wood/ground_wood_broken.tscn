@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dr248im35vync"]
+
+[ext_resource type="Texture2D" uid="uid://c3uperk56f2n0" path="res://assets/PNG/Environment/ground_wood_broken.png" id="1_x00vg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ltlee"]
+size = Vector2(375, 16)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_x00vg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -39)
+shape = SubResource("RectangleShape2D_ltlee")
+one_way_collision = true

@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdirius6h4t02"]
+
+[ext_resource type="Texture2D" uid="uid://1d03hr4sbfhw" path="res://assets/PNG/Environment/spike_top.png" id="1_xsuek"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_xsuek")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+build_mode = 1
+polygon = PackedVector2Array(0, -45, 4, -40, 25, 44, -26, 43, -16, 5, -8, -26, -4, -40)
+one_way_collision = true

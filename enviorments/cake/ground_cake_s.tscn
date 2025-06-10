@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgpyogp6sorgs"]
+
+[ext_resource type="Texture2D" uid="uid://bmyw4qc7xl3gs" path="res://assets/PNG/Environment/ground_cake_small.png" id="1_am8wo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ltlee"]
+size = Vector2(72, 7)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.372, 0.372)
+texture = ExtResource("1_am8wo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -15.5)
+shape = SubResource("RectangleShape2D_ltlee")
+one_way_collision = true

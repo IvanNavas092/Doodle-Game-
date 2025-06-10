@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://swhvn21cwrkd"]
+
+[ext_resource type="PackedScene" uid="uid://du2juunmn5mpg" path="res://enviorments/bg/bg.tscn" id="1_cy4fs"]
+[ext_resource type="PackedScene" uid="uid://dp5l3mvv6u0wn" path="res://enviorments/cake/ground_cake.tscn" id="2_opkgv"]
+[ext_resource type="PackedScene" uid="uid://c5gnu6mqq0srs" path="res://enviorments/spikes/spikes_top.tscn" id="4_6ymxb"]
+[ext_resource type="PackedScene" uid="uid://d1t8vr4wh635u" path="res://enviorments/bg/static_body_2d.tscn" id="5_4pnwd"]
+[ext_resource type="PackedScene" uid="uid://by7324gnxwkvk" path="res://enviorments/grass/ground_grass.tscn" id="5_ix2ig"]
+[ext_resource type="PackedScene" uid="uid://cmue4ydplkwij" path="res://enviorments/grass/ground_grass_s.tscn" id="6_ev46g"]
+[ext_resource type="PackedScene" uid="uid://lf3yqh3yunts" path="res://character/animated_sprite_2d.tscn" id="7_8imdx"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Node2D" parent="." instance=ExtResource("1_cy4fs")]
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_opkgv")]
+visible = false
+position = Vector2(316, 756)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("4_6ymxb")]
+position = Vector2(195, 682)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("5_4pnwd")]
+position = Vector2(511, 777)
+rotation = -0.000580221
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("5_ix2ig")]
+position = Vector2(537, 621)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("5_ix2ig")]
+position = Vector2(187, 454)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("5_ix2ig")]
+position = Vector2(544, 264)
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("6_ev46g")]
+position = Vector2(190, 171)
+
+[node name="StaticBody2D8" parent="." instance=ExtResource("6_ev46g")]
+position = Vector2(661, 88)
+
+[node name="StaticBody2D9" parent="." instance=ExtResource("5_ix2ig")]
+position = Vector2(183, 799)
+
+[node name="StaticBody2D10" parent="." instance=ExtResource("4_6ymxb")]
+position = Vector2(535, 576)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("7_8imdx")]
+position = Vector2(178, 751)
+rotation = 0.0438839
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+rotation = -0.766827

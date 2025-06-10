@@ -1,0 +1,139 @@
+[gd_scene load_steps=6 format=3 uid="uid://ca5t4e43wytsb"]
+
+[ext_resource type="PackedScene" uid="uid://dpsecw8g4wavt" path="res://enviorments/bg/bg_animated.tscn" id="1_c828i"]
+[ext_resource type="FontFile" uid="uid://4a3c4wkgjtlg" path="res://assets/fonts/Kenney Pixel.ttf" id="2_ulk6r"]
+[ext_resource type="FontFile" uid="uid://bglh5t16fwe0e" path="res://assets/fonts/Kenney Pixel Square.ttf" id="3_4kcls"]
+[ext_resource type="Script" path="res://scripts/score_label.gd" id="3_kvxsa"]
+[ext_resource type="Script" path="res://enviorments/interface/ranking_manager.gd" id="3_qw474"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" parent="." instance=ExtResource("1_c828i")]
+
+[node name="header" type="MarginContainer" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 703.0
+offset_bottom = 90.0
+
+[node name="Label" type="Label" parent="header"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 0.905882, 0.0470588, 1)
+theme_override_colors/font_shadow_color = Color(0.898039, 0.411765, 0, 1)
+theme_override_colors/font_outline_color = Color(0.898039, 0.411765, 0, 1)
+theme_override_fonts/font = ExtResource("2_ulk6r")
+theme_override_font_sizes/font_size = 120
+text = "RANKING"
+horizontal_alignment = 1
+
+[node name="content2" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -217.5
+offset_top = -202.0
+offset_right = 217.5
+offset_bottom = 202.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_qw474")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="content2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="content2/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ulk6r")
+theme_override_font_sizes/font_size = 120
+text = "YOUR SCORE:"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="content2/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ulk6r")
+theme_override_font_sizes/font_size = 120
+text = "12345"
+horizontal_alignment = 1
+script = ExtResource("3_kvxsa")
+
+[node name="HSeparator" type="HSeparator" parent="content2/VBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="name_input" type="LineEdit" parent="content2/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/clear_button_color_pressed = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.197142, 0.247667, 0.263615, 1)
+theme_override_colors/font_outline_color = Color(0.611765, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4kcls")
+theme_override_font_sizes/font_size = 60
+placeholder_text = "YOUR NAME"
+alignment = 1
+max_length = 8
+
+[node name="HSeparator2" type="HSeparator" parent="content2/VBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="submit_btn" type="Button" parent="content2/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_4kcls")
+theme_override_font_sizes/font_size = 60
+text = "SUBMIT"
+
+[node name="alert" type="Label" parent="content2/VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.905882, 0.0470588, 1)
+theme_override_colors/font_shadow_color = Color(0.827451, 0.509804, 0.145098, 1)
+theme_override_fonts/font = ExtResource("2_ulk6r")
+theme_override_font_sizes/font_size = 50
+text = "Your name!"
+horizontal_alignment = 1
+
+[node name="name_alert" type="Label" parent="content2/VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.905882, 0.0470588, 1)
+theme_override_colors/font_shadow_color = Color(0.827451, 0.509804, 0.145098, 1)
+theme_override_fonts/font = ExtResource("2_ulk6r")
+theme_override_font_sizes/font_size = 50
+text = "Your score is 0!
+It will not be saved"
+horizontal_alignment = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -116.5
+offset_top = -98.0
+offset_right = 116.5
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="retry_button" type="Button" parent="MarginContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_4kcls")
+theme_override_font_sizes/font_size = 60
+text = "RETRY"
+
+[connection signal="pressed" from="content2/VBoxContainer/submit_btn" to="content2" method="_on_button_pressed"]
+[connection signal="pressed" from="content2/VBoxContainer/submit_btn" to="content2" method="_on_submit_btn_pressed"]
+[connection signal="focus_entered" from="content2/VBoxContainer/alert" to="content2" method="_on_alert_focus_entered"]
+[connection signal="focus_entered" from="content2/VBoxContainer/name_alert" to="content2" method="_on_alert_focus_entered"]
+[connection signal="pressed" from="MarginContainer2/retry_button" to="content2" method="_on_retry_button_pressed"]

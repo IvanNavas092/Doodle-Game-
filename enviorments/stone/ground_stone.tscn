@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://ogaqk8gffedi"]
+
+[ext_resource type="Texture2D" uid="uid://bg36pyuq2sfrw" path="res://assets/PNG/Environment/ground_stone.png" id="1_j4fc4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ltlee"]
+size = Vector2(375, 15)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_j4fc4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -38.5)
+shape = SubResource("RectangleShape2D_ltlee")
+one_way_collision = true

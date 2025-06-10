@@ -1,0 +1,46 @@
+[gd_scene load_steps=9 format=3 uid="uid://swhvn21cwrkd"]
+
+[ext_resource type="PackedScene" uid="uid://lf3yqh3yunts" path="res://character/animated_sprite_2d.tscn" id="1_2r526"]
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_w5gvu"]
+[ext_resource type="PackedScene" uid="uid://by7324gnxwkvk" path="res://enviorments/grass/ground_grass.tscn" id="2_kcpds"]
+[ext_resource type="PackedScene" uid="uid://c1m2e6g4pw4mw" path="res://enviorments/spring/spring.tscn" id="3_6ew0r"]
+[ext_resource type="PackedScene" uid="uid://du2juunmn5mpg" path="res://enviorments/bg/bg.tscn" id="4_6gws5"]
+[ext_resource type="PackedScene" uid="uid://cd55rwcybcynq" path="res://enviorments/cloud/cloud.tscn" id="5_mvvwb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xoohf"]
+size = Vector2(802, 42)
+
+[sub_resource type="GDScript" id="GDScript_8jxyu"]
+
+[node name="game" type="Node2D"]
+script = ExtResource("1_w5gvu")
+platform_scene = Array[PackedScene]([ExtResource("2_kcpds"), ExtResource("3_6ew0r"), ExtResource("5_mvvwb")])
+
+[node name="bg" parent="." instance=ExtResource("4_6gws5")]
+position = Vector2(-81, 45)
+
+[node name="container_platforms" type="Node2D" parent="."]
+
+[node name="platform" parent="container_platforms" instance=ExtResource("2_kcpds")]
+position = Vector2(355, 618)
+
+[node name="player" parent="." instance=ExtResource("1_2r526")]
+position = Vector2(350, 343)
+scale = Vector2(-1, 1)
+
+[node name="camera" type="Camera2D" parent="."]
+position = Vector2(349, 398)
+zoom = Vector2(0.5, 0.5)
+
+[node name="platform_cleaner" type="Area2D" parent="camera"]
+position = Vector2(-38, 488)
+
+[node name="colision" type="CollisionShape2D" parent="camera/platform_cleaner"]
+position = Vector2(37, 11)
+shape = SubResource("RectangleShape2D_xoohf")
+
+[node name="StaticBody2D" parent="." instance=ExtResource("5_mvvwb")]
+position = Vector2(121, 395)
+script = SubResource("GDScript_8jxyu")
+
+[connection signal="body_entered" from="camera/platform_cleaner" to="." method="_on_platform_cleaner_body_entered"]

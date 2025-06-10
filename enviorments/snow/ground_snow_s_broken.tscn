@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bf8bwnhoxbd1o"]
+
+[ext_resource type="Texture2D" uid="uid://ck44m66q6q6q4" path="res://assets/PNG/Environment/ground_snow_small_broken.png" id="1_ddgs8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ltlee"]
+size = Vector2(74, 12)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.372, 0.372)
+texture = ExtResource("1_ddgs8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -12)
+shape = SubResource("RectangleShape2D_ltlee")
+one_way_collision = true

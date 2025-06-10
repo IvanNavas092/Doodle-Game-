@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://nc8xbtgfqa3n"]
+
+[ext_resource type="Texture2D" uid="uid://ckq7cp14l0rs" path="res://assets/PNG/Environment/ground_stone_broken.png" id="1_tn1xn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ltlee"]
+size = Vector2(375, 15)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_tn1xn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -38.5)
+shape = SubResource("RectangleShape2D_ltlee")
+one_way_collision = true

@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cd55rwcybcynq"]
+
+[ext_resource type="Texture2D" uid="uid://d5ii0v8ghmm" path="res://assets/enviorments/Enemies/cloud.png" id="1_8msiw"]
+[ext_resource type="Script" path="res://scripts/cloud.gd" id="1_cgeqh"]
+
+[node name="cloud" type="StaticBody2D" groups=["platform"]]
+collision_layer = 2
+script = ExtResource("1_cgeqh")
+jump_force = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Cloud" type="Sprite2D" parent="Sprite2D"]
+rotation = 3.14159
+scale = Vector2(0.507463, 0.507463)
+texture = ExtResource("1_8msiw")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(65, -24, 44, -30, 24, -33, 11, -34, -9, -34, -29, -32, -52, -27, -65, -23, -65, -21, -65, -13, 5, -15, 31, -12, 61, -3, 67, -12)
+one_way_collision = true

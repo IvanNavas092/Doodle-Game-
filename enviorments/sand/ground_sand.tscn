@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjd5ljs5gocdj"]
+
+[ext_resource type="Texture2D" path="res://assets/PNG/Environment/ground_sand.png" id="1_mw55x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ltlee"]
+size = Vector2(141, 12)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.372, 0.372)
+texture = ExtResource("1_mw55x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -12)
+shape = SubResource("RectangleShape2D_ltlee")
+one_way_collision = true

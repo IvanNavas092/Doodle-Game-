@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://hfcmc6wn21ry"]
+
+[ext_resource type="Texture2D" path="res://assets/PNG/Environment/ground_snow.png" id="1_rdvom"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ltlee"]
+size = Vector2(140, 10)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.372, 0.372)
+texture = ExtResource("1_rdvom")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -12)
+shape = SubResource("RectangleShape2D_ltlee")
+one_way_collision = true
