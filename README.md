@@ -8,6 +8,7 @@
 </div>
 
 ---
+![image](https://github.com/user-attachments/assets/43c8da13-cea8-44fd-be03-778cbdb4bd33)
 
 ## 🎮 **Descripción**
 ¡Salta como un alien furioso en este juego inspirado en el clásico Doodle Jump! Desarrollado en **Godot 4** con GDscript, cuenta con:
