@@ -23,7 +23,8 @@
 ## 📸 **Capturas**
 | Gameplay | Game over | Ranking Global |
 |----------|-----------|----------------|
-| <img src="(https://github.com/user-attachments/assets/14c55f68-c21c-4678-b2ba-4b1e6c2392f0)" width="200" alt="Captura de gameplay"> | <img src="![image](https://github.com/user-attachments/assets/d7064b46-8592-4115-afe9-6c68d86b698c)" width="200" alt="Pantalla de game over"> | <img src="![image](https://github.com/user-attachments/assets/ca6f85ca-5ecf-408d-9bee-372355d416ae)" width="200" alt="Tabla de puntuaciones"> |
+| <img src="![image](https://github.com/user-attachments/assets/bfdae345-623f-4608-8f88-06bb569dc33c)
+" width="200" alt="Captura de gameplay"> | <img src="![image](https://github.com/user-attachments/assets/d7064b46-8592-4115-afe9-6c68d86b698c)" width="200" alt="Pantalla de game over"> | <img src="![image](https://github.com/user-attachments/assets/ca6f85ca-5ecf-408d-9bee-372355d416ae)" width="200" alt="Tabla de puntuaciones"> |
 
 ---
 
