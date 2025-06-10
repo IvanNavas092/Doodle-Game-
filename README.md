@@ -24,7 +24,8 @@
 ## 📸 **Capturas**
 | Gameplay | Game over | Ranking Global |
 |----------|-----------|----------------|
-| <img src="assets/screenshots/gameplay.png" width="200" alt="Captura de gameplay"> | <img src="assets/screenshots/game_over.png" width="200" alt="Pantalla de game over"> | <img src="assets/screenshots/leaderboard.png" width="200" alt="Tabla de puntuaciones"> |
+| <img src=![image](https://github.com/user-attachments/assets/64dbab54-c036-465d-96a9-24bf0d388037)
+ width="200" alt="Captura de gameplay"> | <img src="assets/screenshots/game_over.png" width="200" alt="Pantalla de game over"> | <img src="assets/screenshots/leaderboard.png" width="200" alt="Tabla de puntuaciones"> |
 
 ---
 
