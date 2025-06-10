@@ -1,6 +1,8 @@
 # 🦖 **Alien Rush** - Juego de Plataformas al Estilo Doodle
 
-![Alien Rush Cover](https://github.com/user-attachments/assets/5e220741-3f55-4dc3-b286-b164f307ad58)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5e220741-3f55-4dc3-b286-b164f307ad58" width="400" alt="Alien Rush portada">
+</p>
 
 <em>¡Esquiva obstáculos y alcanza el récord!</em>
 
