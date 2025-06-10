@@ -1,9 +1,8 @@
 # 🦖 **Alien Rush** - Juego de Plataformas al Estilo Doodle 
 
 <div align="center">
-  <img src="![image](https://github.com/user-attachments/assets/19b9bff3-d9a4-451d-9a5e-9d6c37518874)
-"
- alt="Gameplay animado" width="300">
+![image](https://github.com/user-attachments/assets/e52694d3-8495-43b5-bea2-eb06e4af79a8)
+
   <br>
   <em>¡Esquiva obstáculos y alcanza el récord!</em>
 </div>
@@ -24,10 +23,10 @@
 ## 📸 **Capturas**
 | Gameplay | Game over | Ranking Global |
 |----------|-----------|----------------|
-| <img src="![image](https://github.com/user-attachments/assets/bfdae345-623f-4608-8f88-06bb569dc33c)"> 
+| ![image](https://github.com/user-attachments/assets/9d6a73f2-825f-47c9-aa1c-45e2c2a56c84)
 | <img src="![image](https://github.com/user-attachments/assets/b2ce41ce-f00e-48b3-8668-a235f35ee6a6)
-" width="200" alt="Pantalla de game over"> | <img src="![image](https://github.com/user-attachments/assets/cfb24e2a-6de4-486d-8147-87f3c0877220)
-" width="200" alt="Tabla de puntuaciones"> |
+| ![image](https://github.com/user-attachments/assets/cfb24e2a-6de4-486d-8147-87f3c0877220)
+|
 
 ---
 
