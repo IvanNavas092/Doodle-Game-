@@ -41,6 +41,28 @@
 ```
 Descarga Godot 4.2+ desde godotengine.org
 git clone https://github.com/IvanNavas092/Doodle-Game-.git
+Ejecuta game
+```
+## 📂 **Estructura del Proyecto**
+```
+res://
+├── addons/ # Plugins y extensiones
+├── assets/ # Recursos multimedia
+│ ├── fonts/ # Fuentes del juego
+│ ├── sounds/ # Efectos de sonido y música
+│ └── screenshots/ # Capturas para documentación
+├── character/ # Assets y scripts del personaje
+│ ├── sprites/ # Animaciones
+│ └── controller.gd # Lógica de movimiento
+├── environments/ # Escenarios y plataformas
+│ ├── platforms/ # Sprites de plataformas
+│ └── generator.gd # Generación procedural
+├── scripts/ # Código principal
+│ ├── game.gd # Lógica principal
+│ └── silent_wolf_integration.gd # Ranking online
+├── game.tscn # Escena principal
+└── game.gdshader # Efectos visuales
+```
 
 
 
