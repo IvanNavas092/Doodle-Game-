@@ -1,24 +1,20 @@
-  # 🦖 **Alien Rush** - Juego de Plataformas al Estilo Doodle 
-  
-  ![image](https://github.com/user-attachments/assets/5e220741-3f55-4dc3-b286-b164f307ad58)
-  
-  
-    <br>
-    <em>¡Esquiva obstáculos y alcanza el récord!</em>
-  </div>
-  
-  ---
-  
-  
-  ## 🎮 **Descripción**
-  ¡Salta como un alien furioso en este juego inspirado en el clásico Doodle Jump! Desarrollado en **Godot 4** con GDscript, cuenta con:
-  
-  - Sistema de puntuación online con **Silent Wolf**
-  - Física de salto adictiva
-  - Obstáculos generados proceduralmente
-  - Modo infinito
-  
-  ---
+# 🦖 **Alien Rush** - Juego de Plataformas al Estilo Doodle
+
+![Alien Rush Cover](https://github.com/user-attachments/assets/5e220741-3f55-4dc3-b286-b164f307ad58)
+
+<em>¡Esquiva obstáculos y alcanza el récord!</em>
+
+---
+
+## 🎮 **Descripción**
+
+¡Salta como un alien furioso en este juego inspirado en el clásico Doodle Jump!  
+Desarrollado en **Godot 4** con **GDScript**, incluye:
+
+- 🔢 Sistema de puntuación online con **Silent Wolf**
+- 🌀 Física de salto adictiva
+- 🎲 Obstáculos generados proceduralmente
+- ♾️ Modo infinito
   
   
   ## 📸 **Capturas**
@@ -38,9 +34,10 @@
   ```
   ## 🛠️ **Instalación**
   ```
-  Descarga Godot 4.2+ desde godotengine.org
-  git clone https://github.com/IvanNavas092/Doodle-Game-.git
-  Ejecuta game
+1. Descarga Godot 4.2+ desde https://godotengine.org
+2. Clona el repositorio:
+   git clone https://github.com/IvanNavas092/Doodle-Game-.git
+3. Abre el proyecto en Godot y ejecuta `game.tscn`
   ```
   ## 📂 **Estructura del Proyecto**
   ```
